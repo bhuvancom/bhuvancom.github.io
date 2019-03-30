@@ -1,0 +1,283 @@
+/***********************************
+************************************
+CSS RESET   
+************************************
+***********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+	font-weight: 400;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover, a:focus{
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
+/***********************************
+************************************
+Header   
+************************************
+***********************************/
+.header{
+	background: url('img/banner.jpg') no-repeat fixed;
+	background-size: cover;
+	min-height: 650px;
+}
+.bg-color {
+    background-color: rgba(123, 195, 209, 0.51);
+    min-height: 650px;
+}
+.header .intro-text {
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+.intro-text h1 {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: #fff;
+}
+.intro-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: #fff;
+}
+.intro-text .name {
+    font-weight: 600;
+}
+.section-padding{
+	padding: 80px 0px;
+}
+/***********************************
+************************************
+About 
+************************************
+***********************************/
+h2.title-dec {
+    font-size: 25px;
+    color: #222;
+    margin: 0 0 32px;
+    text-transform: uppercase;
+    padding: 0 0 20px;
+    font-weight: 400;
+    position: relative;
+}
+#about p {
+    font-size: 19px;
+    color: #393939;
+    line-height: 24px;
+    margin: 0 0 36px;
+    font-weight: 400;
+}
+.btn {
+    font-size: 17px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background: #222;
+    text-decoration: none;
+    border-radius: 0;
+    border: 1px solid #222;
+}
+.btn:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 34px;
+}
+.navbar-default .navbar-brand span{
+    color: #222;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #222;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    color: #222;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+#main-header{
+    padding: 15px 0px;
+}
+/***********************************
+************************************
+Portfolio   
+************************************
+***********************************/
+.grid-padding img {
+    margin-bottom: 15px;
+}
+.padding-right-zero {
+    padding-right: 0px !important;
+}
+#portfolio {
+    background-color: #f0f1e9;
+}
+.portfolio {
+    background-color: #ddd3;
+}
+/***********************************
+************************************
+Testimonial
+************************************
+***********************************/
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid RGBA(0, 0, 0, 0.18);
+}
+.test-sec blockquote {
+    background: #eee;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    position: relative;
+}
+.carousel-info, blockquote {
+    float: left;
+}
+.test-sec blockquote::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    margin-left: 10px;
+    border-top: 14px solid #eee;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+}
+.test-sec span.testimonials-name {
+    color: #62646f;
+    font-weight: 600;
+    margin: 16px 0 5px;
+}
+.test-sec .carousel-info span {
+    display: block;
+}
+/***********************************
+************************************
+Contact  
+************************************
+***********************************/
+#contact{
+    background-color: #7bc3d1;
+}
+#contact i.fa {
+    color: #121d1f;
+    margin-bottom: 10px;
+}
+#contact h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#contact form {
+    padding: 30px 0;
+}
+#contact .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #2c3e50;
+    background-color: rgba(255,255,255,0.8);
+    background-image: none;
+    border-color: #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+#contact .social i.fa {
+    font-size: 30px;
+    padding: 4px 5px;
+    transition: all 0.5s;
+}
+#contact .social ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+/***********************************
+************************************
+Footer
+************************************
+***********************************/
+#footer {
+    background: #121d1f;
+    color: #7d8384;
+    padding: 30px 0 25px 0;
+}
+/***********************************
+************************************
+Media Query
+************************************
+***********************************/
+@media (min-width: 100px) and (max-width: 550px) {
+ .carousel-info {
+    margin-bottom: 30px;
+}
+#contact p{
+margin-bottom: 10px;
+}
+}
