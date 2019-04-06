@@ -83,24 +83,12 @@
             <div class="col-md-4 col-sm-4 padding-right-zero">
               <img src="img/portfolio01.jpg" class="img-responsive">
               <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
             </div>
             <div class="col-md-4 col-sm-4 padding-right-zero">
               <img src="img/portfolio02.jpg" class="img-responsive">
               <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
             </div>
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-            </div>
+           
           </div>
         </div>
       </div>
@@ -167,7 +155,7 @@
       </div>
       <div class="col-md-8 col-md-offset-2">
         <h3>Leave me a message</h3>
-        <form name="sentMessage" id="contactForm" onsubmit="return sendmail();">
+        <form name="sentMessage" id="contactForm" method="POST" onsubmit="return sendmail();">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -197,10 +185,14 @@
           var name = document.getElementById('name').value;
           var email = document.getElementById('email').value;
           var msg = document.getElementById('message').value;
-          var body = "Hello the user "+name+"wants to say\n      \"     "+msg+"\"";
+          var body = "Hello the user "+name+"wants to say\n      \""+msg+"\"";
 
-          window.open('mailto:bhuvaneshvar8@gmail.com?subject=Mail Regarding bhuvancom.github.io&body='+body);
+          var x = window.open('mailto:bhuvaneshvar8@gmail.com?subject=Mail Regarding bhuvancom.github.io&body='+body);
+          
+          
         }
+
+        
         
         </script>
   
