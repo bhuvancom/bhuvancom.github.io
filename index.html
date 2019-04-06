@@ -25,6 +25,13 @@
     <![endif]-->
 </head>
 
+<style>
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+  }
+
+</style>
+
 <body>
   <!--HEADER-->
   <div class="header">
@@ -43,11 +50,11 @@
             </div>
             <div class="collapse navbar-collapse" id="lauraMenu">
               <ul class="nav navbar-nav navbar-right navbar-border">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class=""><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#testimonial">Clients</a></li>
-                
+                <li><a href="#contact">Contact Me</a></li>
+
               </ul>
             </div>
           </div>
@@ -57,7 +64,8 @@
         <div class="col-md-offset-6 col-md-6">
           <div class="intro-text">
             <h1>Hello, I'm <span class="name" style="font-size:.8em;">Bhuvaneshvar Srivastava</span></h1>
-            <p>Web, &amp;Mobile App Developer</p>            <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+            <p>Web, &amp;Mobile App Developer</p> <a href="#about" class="btn btn-default btn-lg page-scroll">Learn
+              More</a>
           </div>
         </div>
       </div>
@@ -68,8 +76,9 @@
     <div class="container text-center">
       <h2 class="title-dec">Who I am</h2>
       <p>I am professional, I know how to attract a lot of people, a nice, clean, responsive design and a <br>
-        professional code. Application building using Agile methodology so don't worry if your requirements are not known or partially, I am always ready to provide changes in your code.</p>
-      <a href="http://www.github.com/bhuvancom"  class="btn" target="_blank">See My work</a>
+        professional code. Application building using Agile methodology so don't worry if your requirements are not
+        known or partially, I am always ready to provide changes in your code.</p>
+      <a href="http://www.github.com/bhuvancom" class="btn" target="_blank">See My work</a>
     </div>
   </section>
   <!--PORTFOLIO-->
@@ -100,13 +109,13 @@
             </div>
           </div>
 
-          </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
-  
-  
+
+
   <!--CONTACT-->
   <div id="contact" class="text-center section-padding">
     <div class="container">
@@ -129,25 +138,25 @@
       <div class="col-md-8 col-md-offset-2">
         <h3>Leave me a message</h3>
         <!-- <form name="sentMessage" id="contactForm" method="POST" onsubmit="return sendmail();"> -->
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input id="name" class="form-control" placeholder="Name" required="required" type="text" required>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input id="email" class="form-control" placeholder="Email" required="required" type="email" required>
-                <p class="help-block text-danger"></p>
-              </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input id="name" class="form-control" placeholder="Name" required="required" type="text" required>
+              <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required=""
-              required></textarea>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input id="email" class="form-control" placeholder="Email" required="required" type="email" required>
+              <p class="help-block text-danger"></p>
+            </div>
           </div>
-          <button type="submit" class="btn btn-default" onclick="return sendmail();">Send Message</button>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required=""
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-default" onclick="return sendmail();">Send Message</button>
         <!-- </form> -->
 
 
