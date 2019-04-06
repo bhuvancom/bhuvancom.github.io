@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +24,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
   <!--HEADER-->
   <div class="header">
@@ -51,16 +53,16 @@
           </div>
         </nav>
       </header>
-    <div class="container">
-      <div class="col-md-offset-6 col-md-6">
-        <div class="intro-text">
-          <h1>Hello, I'm <span class="name">Bhuvaneshvar Srivastava</span></h1>
-          <p>Java &amp; Android Developer</p>
-          <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+      <div class="container">
+        <div class="col-md-offset-6 col-md-6">
+          <div class="intro-text">
+            <h1>Hello, I'm <span class="name">Bhuvaneshvar Srivastava</span></h1>
+            <p>Java &amp; Android Developer</p>
+            <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
   <!--ABOUT-->
   <section id="about" class="section-padding">
@@ -165,34 +167,50 @@
       </div>
       <div class="col-md-8 col-md-offset-2">
         <h3>Leave me a message</h3>
-        <form name="sentMessage" id="contactForm" novalidate="">
+        <form name="sentMessage" id="contactForm" onsubmit="return sendmail();">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input id="name" class="form-control" placeholder="Name" required="required" type="text">
+                <input id="name" class="form-control" placeholder="Name" required="required" type="text" required>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input id="email" class="form-control" placeholder="Email" required="required" type="email">
+                <input id="email" class="form-control" placeholder="Email" required="required" type="email" required>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
           </div>
           <div class="form-group">
             <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"
-              required=""></textarea>
+              required="" required></textarea>
           </div>
-          <button type="submit" class="btn btn-default">Send Message</button>
+          <button type="submit" class="btn btn-default" onclick="//return sendmail();">Send Message</button>
         </form>
+
+
+        <script type="text/javascript">
+        
+        function sendmail()
+        {
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var msg = document.getElementById('message').value;
+          var body = "Hello the user "+name+"wants to say\n      \"     "+msg+"\"";
+
+          window.open('mailto:bhuvaneshvar8@gmail.com?subject=Mail Regarding bhuvancom.github.io&body='+body);
+        }
+        
+        </script>
+  
         <div class="social">
           <ul>
             <li><a href="http://www.facebhook.com/bhuvancom"><i class="fa fa-facebook"></i></a></li>
             <li><a href="http://www.twitter.com/bhuvancom"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
             <li><a href="http://www.github.com/bhuvancom"><i class="fa fa-github"></i></a></li>
-            <li><a href="http://www.instagram.com/___bhuvan__"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://www.instagram.com/__bhuvan___"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://www.linkedin.com/in/bhuvancom/"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </div>
